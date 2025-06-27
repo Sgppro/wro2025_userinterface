@@ -4,11 +4,18 @@ app = Flask(__name__, static_folder="./static")
 
 @app.route("/")
 def rootpage():
-    return redirect("/main.html")
+    return redirect("/detection.html")
 
-@app.route("/main.html")
-def mainPage():
-    return render_template("main.html")
+@app.route("/detection.html")
+def detectionPage():
+    return render_template("detection.html")
 
+@app.route("/astronaut.html")
+def astronautPage():
+    return render_template("astronaut.html")
+
+@app.route("/docking.html")
+def dockingPage():
+    return render_template("docking.html")
 if __name__ == "__main__":
     app.run(host="0.0.0.0",port=5500)
