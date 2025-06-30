@@ -17,14 +17,15 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #333;
-  width: 110%;
+  width: 100vw;
 }
 
 li {
   float: left;
 }
 
-#MenuLink {
+.MenuLink {
+	font-family: Arial, Helvetica, sans-serif;
   display: block;
   color: white;
   text-align: center;
@@ -32,6 +33,22 @@ li {
   text-decoration: none;
 }
 
-#MenuLink:hover {
+.MenuLink:hover {
   background-color: #111;
+}
+
+#active {
+	background-color: #EEEEEE;
+	color: #111
+}
+
+.camera {
+	width: 20vw;
+	height: 20vh;
+	background-color: white
+}
+.cameraBox {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
 }
