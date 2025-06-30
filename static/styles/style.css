@@ -70,12 +70,45 @@ li {
 	height:30vw;
 	margin: 5vh;
 	padding:1vw;
-	background-color:white;
+	background-color:#393E46;
 	gap: 1vw;
 	grid-template-columns: auto auto auto
 }
 .directionalButton{
 	width:9vw;
 	height:9vw;
-	background-color:blue
+  padding: 0px;
+  border: 0px;
+  background-color: #393E46;
+  border-radius: 1vw
+}
+.buttonImage{
+  height: 9vw;
+  width: 9vw;
+  padding: 0px;
+  margin: 0px;
+  background-color: #393E46;
+  border-radius: 1vw
+}
+.controlButtonImage:hover{
+  filter:brightness(70%)
+}
+.dockingButton{
+  text-align: center;
+  font-size: 2.5vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: auto;
+  padding-bottom: auto;
+  width: auto;
+  height: 5vh;
+  border-width: 0px;
+  border-radius: 0.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  background-color: #948979
+}
+
+.dockingButton:hover{
+  background-color: #776e61
 }

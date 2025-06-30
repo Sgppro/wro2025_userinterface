@@ -9,20 +9,19 @@
     <h1>Arm Console</h1>
     <ul>
         <li><a href="/detection.html" class="MenuLink">Detection</a></li>
-        <li><a "active"  href="/astronaut.html" class="MenuLink">Astronaut</a></li>
+        <li><a id="active"  href="/astronaut.html" class="MenuLink">Astronaut</a></li>
         <li><a href="/docking.html" class="MenuLink">Docking</a></li>
     </ul>
     <div class=centerDivFlexbox>
 	    <div class=control>
-		    <button class=directionalButton type="image"><img class=buttonImage src="" alt=""</button>
-		    <button class=directionalButton type="image"><img class=buttonImage src="" alt=""</button>
-		    <button class=directionalButton type="image"><img class=buttonImage src="" alt=""</button>
-		    <button class=directionalButton type="image"><img class=buttonImage src="" alt=""</button>
-		    <button class=directionalButton type="image"><img class=buttonImage src="" alt=""</button>
-		    <button class=directionalButton type="image"><img class=buttonImage src="" alt=""</button>
-		    <button class=directionalButton type="image"><img class=buttonImage src="" alt=""</button>
-		    <button class=directionalButton type="image"><img class=buttonImage src="" alt=""</button>
-		    <button class=directionalButton type="image"><img class=buttonImage src="" alt=""</button>
+		    <button class=directionalButton type="image"><img class="buttonImage controlButtonImage" src="{{url_for('static', filename='images/3D-up.png')}}" alt=""</button>
+		    <button class=directionalButton type="image"><img class="buttonImage controlButtonImage" src="{{url_for('static', filename='images/Up.png')}}" alt=""</button>
+		    <button class=directionalButton type="image"><img class="buttonImage controlButtonImage" src="{{url_for('static', filename='images/3D-down.png')}}" alt=""</button>
+		    <button class=directionalButton type="image"><img class="buttonImage controlButtonImage" src="{{url_for('static', filename='images/Left.png')}}" alt=""</button>
+		    <button class=directionalButton type="image"><p class=buttonImage></p>
+		    <button class=directionalButton type="image"><img class="buttonImage controlButtonImage" src="{{url_for('static', filename='images/Right.png')}}" alt=""</button>
+		    <button class=directionalButton type="image"><p class=buttonImage></p>
+		    <button class=directionalButton type="image"><img class="buttonImage controlButtonImage" src="{{url_for('static', filename='images/Down.png')}}" alt=""</button>
 	    </div>
 	    <div class=astronautCamera></div>
     </div>
