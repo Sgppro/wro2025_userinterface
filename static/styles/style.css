@@ -43,12 +43,39 @@ li {
 }
 
 .camera {
-	width: 20vw;
-	height: 20vh;
+	width: 30vw;
+	height: 30vw;
+	margin: 5vh;
 	background-color: white
 }
-.cameraBox {
+.centerDivFlexbox {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
+}
+
+#warning-message {
+	font-size: 3vh;
+	color: red;
+}
+.astronautCamera {
+	width: 50vw;
+	height: 30vw;
+	margin: 5vh;
+	background-color:white
+}
+.control {
+	display:grid;
+	width:30vw;
+	height:30vw;
+	margin: 5vh;
+	padding:1vw;
+	background-color:white;
+	gap: 1vw;
+	grid-template-columns: auto auto auto
+}
+.directionalButton{
+	width:9vw;
+	height:9vw;
+	background-color:blue
 }
