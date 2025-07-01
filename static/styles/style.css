@@ -66,25 +66,25 @@ li {
 }
 .control {
 	display:grid;
-	width:30vw;
-	height:30vw;
+	width:15vw;
+	height:15vw;
 	margin: 5vh;
-	padding:1vw;
+	padding:0.5vw;
 	background-color:#393E46;
-	gap: 1vw;
+	gap: 0.5vw;
 	grid-template-columns: auto auto auto
 }
 .directionalButton{
-	width:9vw;
-	height:9vw;
+	width:4.5vw;
+	height:4.5vw;
   padding: 0px;
   border: 0px;
   background-color: #393E46;
   border-radius: 1vw
 }
 .buttonImage{
-  height: 9vw;
-  width: 9vw;
+  height: 4.5vw;
+  width: 4.5vw;
   padding: 0px;
   margin: 0px;
   background-color: #393E46;
@@ -111,4 +111,21 @@ li {
 
 .dockingButton:hover{
   background-color: #776e61
+}
+
+.coordinateDiv{
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center
+}
+.coordinateInputBox{
+  height: 2vh
+}
+.coordinateText{
+  margin: 0px
+}
+.sendCoordinateText{
+  margin: 1vh;
+  font-size: 2.5vh
 }
