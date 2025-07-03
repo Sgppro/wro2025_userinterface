@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <title>title</title>
+</head>
+<body>
+    <h1>Arm Console</h1>
+    <ul>
+        <li><a href="/detection.html" class="MenuLink">Detection</a></li>
+        <li><a href="/astronaut.html" class="MenuLink">Astronaut</a></li>
+        <li><a href="/docking.html" class="MenuLink">Docking</a></li>
+	<li><a id="active" href="/port.html" class="MenuLink">Port</a></li>
+    </ul>
+    <div class=centerDivFlexbox>
+	    <div class=ConnectedDiv>
+		    <p class=CurrentlyConnectedPortText>Currently connected port</p>
+		    <p class=ConnectedPortName>--</p>
+	    </div>
+	    <div class=SelectionDiv>
+		    <div class=SelectionButtonDiv>
+			    <button class=portButton id=A>A</button>
+			    <button class=portButton id=B>B</button>
+			    <button class=portButton id=C>C</button>
+			    <button class=portButton id=D>D</button>
+		    </div>
+		    <div class=sendDiv>
+			    <p>Selected port</p>
+			    <p id=selectedPort>--</p>
+		    </div>
+		    <button class=sendButton>Send arm to selected port</button>
+				    
+	    </div>
+    </div>
+	
+</body>
+</html>
+
+
+

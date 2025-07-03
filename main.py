@@ -17,5 +17,10 @@ def astronautPage():
 @app.route("/docking.html")
 def dockingPage():
     return render_template("docking.html")
+
+@app.route("/port.html")
+def portPage():
+    return render_template("port.html")
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0",port=5500)

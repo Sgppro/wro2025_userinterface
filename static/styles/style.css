@@ -140,3 +140,62 @@ li {
 .sendCoordinateButton{
 	margin:1vw;
 }
+.CurrentlyConnectedPortText{
+	font-size: 4vh;
+	text-align: center
+}
+.ConnectedPortName{
+	font-size:20vh;
+	text-align:center
+}
+.ConnectedDiv{
+	display:flex;
+	width:70vw;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	background-color: #F5F0CD;
+	margin: 5vh;
+
+}
+.SelectionDiv{
+	display:flex;
+	width: 20vw;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content:center;
+	background-color: #F5F0CD;
+	margin: 5vh;
+	padding: 5vh;
+
+}
+.SelectionButtonDiv{
+	display:flex;
+	width:auto;
+	justify-content: center;
+}
+.portButton{
+	width: 8vh;
+	height: 8vh;
+	border-width: 0px;
+	font-size: 7vh;
+	margin: 0.5vh;
+	padding: 0.5vh;
+	border-radius:0.5vw;
+}
+.portButton:Hover{
+	background-color:#AAA
+}
+.sendButton{
+	border-width: 0px;
+	font-size: 2vw;
+	width:15vw;
+	border-radius: 0.5vw;
+}
+.sendButton:Hover{
+	background-color: #AAA;
+}
+
+.sendDiv p{
+	font-size:1.5vw;
+}
