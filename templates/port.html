@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+	<script src="{{url_for('static', filename='scripts/port.js')}}"></script>
     <title>title</title>
 </head>
 <body>
@@ -20,10 +21,10 @@
 	    </div>
 	    <div class=SelectionDiv>
 		    <div class=SelectionButtonDiv>
-			    <button class=portButton id=A>A</button>
-			    <button class=portButton id=B>B</button>
-			    <button class=portButton id=C>C</button>
-			    <button class=portButton id=D>D</button>
+			    <button class=portButton id="A" onclick="portButtonClicked(this.id)">A</button>
+			    <button class=portButton id="B" onclick="portButtonClicked(this.id)">B</button>
+			    <button class=portButton id="C" onclick="portButtonClicked(this.id)">C</button>
+			    <button class=portButton id="D" onclick="portButtonClicked(this.id)">D</button>
 		    </div>
 		    <div class=sendDiv>
 			    <p>Selected port</p>
