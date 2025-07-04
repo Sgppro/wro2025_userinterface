@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, request
 
 app = Flask(__name__, static_folder="./static")
 
@@ -8,19 +8,23 @@ def rootpage():
 
 @app.route("/detection.html")
 def detectionPage():
-    return render_template("detection.html")
+    hostname = request.headers.get('Host').split(':')[0]
+    return render_template("detection.html", hostname=hostname)
 
 @app.route("/astronaut.html")
 def astronautPage():
-    return render_template("astronaut.html")
+    hostname = request.headers.get('Host').split(':')[0]
+    return render_template("astronaut.html", hostname=hostname)
 
 @app.route("/docking.html")
 def dockingPage():
-    return render_template("docking.html")
+    hostname = request.headers.get('Host').split(':')[0]
+    return render_template("docking.html", hostname=hostname)
 
 @app.route("/port.html")
 def portPage():
-    return render_template("port.html")
+    hostname = request.headers.get('Host').split(':')[0]
+    return render_template("port.html", hostname=hostname)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0",port=5500)
